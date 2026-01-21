@@ -1,0 +1,24 @@
+=== Database Diagnostic ===
+
+1. Checking columns in account table:
+Found 13 columns:
+  - "id" (text, nullable: NO)
+  - "userId" (text, nullable: NO)
+  - "accountId" (text, nullable: NO)
+  - "providerId" (text, nullable: NO)
+  - "accessToken" (text, nullable: YES)
+  - "refreshToken" (text, nullable: YES)
+  - "accessTokenExpiresAt" (timestamp without time zone, nullable: YES)
+  - "refreshTokenExpiresAt" (timestamp without time zone, nullable: YES)
+  - "scope" (text, nullable: YES)
+  - "password" (text, nullable: YES)
+  - "createdAt" (timestamp without time zone, nullable: NO)
+  - "updatedAt" (timestamp without time zone, nullable: NO)
+  - "idToken" (text, nullable: YES)
+
+2. Has "idToken" column: true
+
+3. Testing query on account table:
+  ✅ Query successful. Found 0 records.
+
+=== Diagnostic Complete ===
