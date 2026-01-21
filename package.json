@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "clean": "powershell -ExecutionPolicy Bypass -File scripts/clean-build.ps1",
+    "clean:build": "npm run clean && npm run build",
     "db:migrate": "tsx scripts/run-migration.ts",
     "db:wake": "tsx scripts/wake-database.ts",
     "test:email": "tsx scripts/test-email.ts"
